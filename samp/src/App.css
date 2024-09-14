@@ -1,0 +1,73 @@
+.app-container {
+    width: 50% !important ;
+       margin: 50px auto; 
+       background-color:black;
+       border: none;
+       padding: 30px;
+       border-radius: 10px;
+       box-sizing: border-box; 
+       box-shadow: 2px 2px 5px 3px rgba(21, 51, 170, 0.836);
+   }
+   .task-form {
+    display: flex;
+    margin-bottom: 20px;
+  }
+  .task-input {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+    width: 300px;
+  }
+  button{
+    background: rgba(0, 102, 255, 0.945);
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    font-size: 15px;
+  }
+  li{
+    
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 4px;
+    border: none;
+    margin-right: 10px;
+    width: 300px;
+    background-color:white;
+
+    list-style: none;
+  
+
+  }
+  .list-items {
+    display: flex;
+  }
+  
+  .list-items .list-item-list {
+    flex: 1;
+  }
+  
+  .list-items .list-item-icons {
+    padding-left: 5px;
+    font-size: 25px;
+    cursor: pointer;
+  }
+  
+  #complete {
+    color: green;
+  }
+  
+  #edit {
+    color: #007bff;
+  }
+  
+  #delete {
+    color: rgba(255, 0, 0, 0.735);
+  }
+  
+#list-items{
+  text-decoration: line-through;
+  opacity: 0.3;
+}
