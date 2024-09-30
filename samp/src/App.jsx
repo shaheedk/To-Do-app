@@ -12,7 +12,7 @@ function App() {
 
   useEffect(() => {
     inputRef.current.focus();
-  }, []); 
+  }); 
 
   const handleSubmit = (e) => {
     e.preventDefault();
