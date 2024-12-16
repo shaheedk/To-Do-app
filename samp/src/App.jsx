@@ -5,11 +5,12 @@ import { FaEdit } from "react-icons/fa";
 import { MdDelete } from "react-icons/md";
 
 function App() {
+  
   const [task, setTask] = useState('');
   const [tasks, setTasks] = useState([]);
   const [editId, setEditId] = useState(0);
+  
   const inputRef = useRef();
-
   useEffect(() => {
     inputRef.current.focus();
   }); 
