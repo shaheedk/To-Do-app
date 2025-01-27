@@ -1,82 +1,116 @@
-
 .container {
-  width: 40% !important ;
-     margin: 50px auto; 
-     background-color: #012727d7;
-     border: none;
-     padding: 30px;
-     border-radius: 10px;
-     box-sizing: border-box; 
-     box-shadow: 0px 4px 20px rgba(0, 123, 255, 0.5);
- }
- 
- 
- h2 {
-     text-align: center;
-     color: white;
- }
- 
- .form-group {
-     display: flex;
-     flex-direction: row;
-     margin: 20px;
-     width: auto;
- }
- 
- .add{
-     margin-left: 10px;
-     background-color: transparent;
-     color: white;
-     border-radius: 5px;
-     padding: 10px;
-     width: 20%;
-     font-weight: bold;
-     cursor: pointer;
-     border: none;
- }
- 
- .list{
-     margin-top: 30px;
- }
- li{
-     background-color: black !important;
-     margin-left: -12px;
-     color: #fff !important;
-     border:none !important;
-     list-style: none;
-     border-radius: 7px;
-   margin-top: 5px;
-   padding: 4px;
-   font-size: 19px;
- }
- 
- .list-items {
-     display: flex;
-   }
-   
-   .list-items .list-item-list {
-     flex: 1;
-   }
-   
-   .list-items .list-item-icons {
-     padding-left: 5px;
-     font-size: 25px;
-     cursor: pointer;
-   }
-   
-   #complete {
-     color: green;
-   }
-   
-   #edit {
-     color: #007bff;
-   }
-   
-   #delete {
-     color: rgba(255, 0, 0, 0.735);
-   }
-   
- #list-items{
-   text-decoration: line-through;
-   opacity: 0.3;
- }
+  width: 90%; /* Default for smaller screens */
+  margin: 20px auto;
+  padding: 20px;
+}
+
+/* Styles for larger screens */
+@media (min-width: 768px) {
+  .container {
+    width: 60%;
+    margin: 30px auto;
+    padding: 25px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    width: 40%;
+    margin: 50px auto;
+    padding: 30px;
+  }
+}
+
+h2 {
+  text-align: center;
+  color: white;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column; /* Default for smaller screens */
+  margin: 10px;
+  width: auto;
+}
+
+@media (min-width: 768px) {
+  .form-group {
+    flex-direction: row; /* Switch to row for larger screens */
+    margin: 20px;
+  }
+}
+
+.add {
+  margin-left: 0;
+  margin-top: 10px;
+  background-color: transparent;
+  color: white;
+  border-radius: 5px;
+  padding: 10px;
+  width: 100%; /* Full width for smaller screens */
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+}
+
+@media (min-width: 768px) {
+  .add {
+    width: 20%; /* Restore width for larger screens */
+    margin-left: 10px;
+  }
+}
+
+.list {
+  margin-top: 20px;
+}
+
+li {
+  background-color: black !important;
+  margin-left: 0;
+  color: #fff !important;
+  border: none !important;
+  list-style: none;
+  border-radius: 7px;
+  margin-top: 5px;
+  padding: 4px;
+  font-size: 17px; /* Adjust for smaller screens */
+}
+
+@media (min-width: 768px) {
+  li {
+    font-size: 19px; /* Restore font size for larger screens */
+    margin-left: -12px;
+  }
+}
+
+.list-items {
+  display: flex;
+  flex-direction: column; /* Default for smaller screens */
+}
+
+@media (min-width: 768px) {
+  .list-items {
+    flex-direction: row; /* Switch to row for larger screens */
+  }
+}
+
+.list-items .list-item-list {
+  flex: 1;
+}
+
+.list-items .list-item-icons {
+  padding-left: 5px;
+  font-size: 20px; /* Adjust icon size for smaller screens */
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .list-items .list-item-icons {
+    font-size: 25px; /* Restore icon size for larger screens */
+  }
+}
+
+#list-items {
+  text-decoration: line-through;
+  opacity: 0.3;
+}
